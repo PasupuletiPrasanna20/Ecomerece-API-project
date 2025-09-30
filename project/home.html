@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecommerce store </title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1 class="logo">Ecommerce</h1>
+    <ul class="nav-links">
+      <li><a href="./home.html">Home</a></li>
+      <li><a href="./product.html">Products</a></li>
+      <li><a href="./About.html">About</a></li>
+      <li><a href="./contact.html">Contanct</a></li>
+    
+    </ul>
+    <div class="flex space-x-4">
+        <a href="./login.html" class="nav-link">
+        <i class="fas fa-sign-in-alt"></i> Login
+      </a>
+      <a href="./register.html" class="nav-link">
+        <i class="fas fa-user-plus"></i> Register
+      </a>
+      <a href="./cart.html" class="nav-link">
+        <i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)
+      </a>
+      </div>
+    </div>
+  </nav>
+
+  </nav>
+ <div class="mainbar">
+  <div class="text-box">
+    <h1>New Season Arrivals</h1>
+    <p>This is a wider card with supporting text below as a natural lead-into to additional content. This content is a little bit longer.</p>
+  </div>
+</div>
+
+  <h2 class="title">Latest Products</h2>
+  <hr>
+  <div class="category-buttons">
+  <button onclick="filterProducts('all')">All</button>
+  <button onclick="filterProducts(`men's clothing`)">Men's Clothing</button>
+  <button onclick="filterProducts(`women's clothing`)">Women's Clothing</button>
+  <button onclick="filterProducts('jewelery')">Jewelery</button>
+  <button onclick="filterProducts('electronics')">Electronics</button>
+</div>
+
+
+
+  <div class="product-container" id="productContainer"></div>
+
+  <!-- Cart Section -->
+  <div class="cart-section" id="cartSection">
+    <!-- <h2>Your Cart</h2>
+     
+    <p class="total">Total: $<span id="cartTotal">0.00</span></p>
+  </div> -->   <ul id="cartItems"></ul>
+   
+  <!-- Products Container -->
+  <footer>
+    <h2>Made with <i class="fa-solid fa-heart fa-xl" style="color: #e4071d;"></i> by  prasanna  reference of AchieversIT</h2>
+  </footer>
+  <script src="./app.js"></script>
+</body>
+</html>
